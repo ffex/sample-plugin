@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { ItemView, WorkspaceLeaf } from "obsidian";
 import { Root, createRoot } from "react-dom/client";
 import { ReactView } from "./ReactView";
-import React from "react";
+
 
 export const R_VIEW_TYPE_EXAMPLE = "react-example-view";
 
@@ -14,7 +14,7 @@ export class RView extends ItemView {
 	}
 
 	getViewType() {
-		return VIEW_TYPE_EXAMPLE;
+		return R_VIEW_TYPE_EXAMPLE;
 	}
 
 	getDisplayText() {
