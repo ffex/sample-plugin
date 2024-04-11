@@ -22,11 +22,12 @@ export class RView extends ItemView {
 	}
 
 	async onOpen() {
+		
 		this.root = createRoot(this.containerEl.children[1]);
 		this.root.render(
 			<StrictMode>
-				<ReactView />,
-			</StrictMode>,
+				<ReactView/>
+			</StrictMode>
 		);
 	}
 
